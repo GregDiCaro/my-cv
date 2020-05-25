@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 
-body{
 
-    padding: 0;
-    margin: 0
-}
 
 .tableau{
 
@@ -43,11 +39,15 @@ header{
     
 }
 .cercle{
-    height: 70px;
-    width: 70px;
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border:3px solid white;
+    margin-left: 5px;
+    margin-top: 80px;
     
-    border-radius: 35px;
-    background-color: white;
 }
 .statut{
     color: rgb(92, 84, 84);
