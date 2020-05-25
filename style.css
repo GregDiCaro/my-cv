@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
 body{
 
     padding: 0;
@@ -8,40 +12,82 @@ body{
 
     display: grid;
     grid-template-columns: 1fr 2fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    width:500px;
+    grid-template-rows: repeat(9 , 1fr);
+    width:600px;
     height: 100vh;
-    grid-gap: 1px;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(240, 234, 234);
     grid-template-areas: 
     "header main" 
+    "header main"
+    "header main"
     "article section"
-    "nav footer"
+    "article section"
+    "nav section"
+    "nav section"
+    "aside footer"
     "aside footer"
     ;
+    
 }
+
 header{
     background-color: rgb(252, 122, 112);
     grid-area: header;
-    height: 283px;
-   
-
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color:white;
+    
 }
+.cercle{
+    height: 70px;
+    width: 70px;
+    
+    border-radius: 35px;
+    background-color: white;
+}
+.statut{
+    color: rgb(92, 84, 84);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+.texteint{
+    
+    font-size: 15px;
+    color:white;
+}  
+
 article{
     background-color: rgb(252, 122, 112);
     ;
     grid-area: article;
-    
-    
-   
+    grid-column: 1;
+    color: rgb(92, 84, 84);
+    text-align: center;
+    padding: 10px;
 }
 nav{
     background-color: rgb(252, 122, 112);
     grid-area: nav;
+    text-align: center;
+    color: rgb(92, 84, 84);
+    padding: 10px;
 }
 aside{
     background-color: rgb(252, 122, 112);
     grid-area: aside;
+    color: rgb(92, 84, 84);
+    text-align: center;
+    padding: 10px;
 }
+
+
 
 /* .tableau2{
 
@@ -56,26 +102,60 @@ aside{
     grid-gap: 10px;
 
 } */
-footer{
-    
-	
-    background-color: bisque;
-    grid-area: footer;
-    
-   
+.titre{
+    color: rgb(252, 122, 112);
+    text-align: left;
+}
+div > p {
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    margin-left: 30px;
+    font-family:'Open Sans Condensed', sans-serif;
+}
 
+div>ul{
+    font-size: 12px;
+    text-align: left;
+}
+li{
+    list-style-type: none; 
+}
+li:before {
+    
+	content: "→ "; 
 }
 main{
-    background-color: bisque;
+    
     grid-area: main;
-    height: 375px;
+    grid-column: 2;
+    grid-row: 1/4;
+    color: rgb(92, 84, 84);
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
     
     
 }
-    
+
 section{
-    background-color: bisque;
+    
     grid-area: section;
     
-    
+    grid-column: 2;
+    grid-row: 5/7;
+    color: rgb(92, 84, 84);
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+footer{
+        
+        grid-area: footer;
+        grid-column: 2;
+        grid-row: 8/9;
+        color: rgb(92, 84, 84);
+        text-align: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
