@@ -1,0 +1,81 @@
+body{
+
+    padding: 0;
+    margin: 0
+}
+
+.tableau{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    width:500px;
+    height: 100vh;
+    grid-gap: 1px;
+    grid-template-areas: 
+    "header main" 
+    "article section"
+    "nav footer"
+    "aside footer"
+    ;
+}
+header{
+    background-color: rgb(252, 122, 112);
+    grid-area: header;
+    height: 283px;
+   
+
+}
+article{
+    background-color: rgb(252, 122, 112);
+    ;
+    grid-area: article;
+    
+    
+   
+}
+nav{
+    background-color: rgb(252, 122, 112);
+    grid-area: nav;
+}
+aside{
+    background-color: rgb(252, 122, 112);
+    grid-area: aside;
+}
+
+/* .tableau2{
+
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 4fr 2fr 2fr ;
+    margin: auto;
+    
+    
+    width: 350px;
+    height: 100vh;
+    grid-gap: 10px;
+
+} */
+footer{
+    
+	
+    background-color: bisque;
+    grid-area: footer;
+    
+   
+
+}
+main{
+    background-color: bisque;
+    grid-area: main;
+    height: 375px;
+    
+    
+}
+    
+section{
+    background-color: bisque;
+    grid-area: section;
+    
+    
+}
